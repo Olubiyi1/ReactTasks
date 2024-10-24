@@ -1,11 +1,19 @@
 import Homepage from "./Homepage/HomePage";
+import Header from "./Homepage/Header";
+import styled from "styled-components";
 
 const App = () => {
     return ( 
-        <div>
+        <Main>
+            <Header/>
             <Homepage/>
-        </div>
+        </Main>
      );
 }
 
 export default App;
+
+const Main=styled.div`
+   /* background-color: red; */
+   
+`

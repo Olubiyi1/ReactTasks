@@ -1,11 +1,12 @@
+// import styled from "styled-components";
 import styled from "styled-components";
 
 
-const BlogProps = ({Image,Title,Time,Post}) => {
+const BlogProps = ({Image,Time,Post}) => {
     return ( 
         <Section>
             <img src={Image} alt="" />
-            <p>{<span>{Title}</span>}{Time}</p>
+            <p>{Time}</p>
             <p id="Post"><i>{Post}</i></p>
 
         </Section>
@@ -14,8 +15,14 @@ const BlogProps = ({Image,Title,Time,Post}) => {
 export default BlogProps;
 
 const Section=styled.div`
-    border: 1px solid;
-    width: 200px;
-    height: 200px;
+    
+    border-radius: 10px;
+    width: 500px; 
     margin: 20px 0px ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
 `
